@@ -8,7 +8,7 @@ export async function getStaticProps() {
   const resp = await fetch(
     "https://jherr-pokemon.s3.us-west-1.amazonaws.com/index.json"
   );
-
+  console.log("inside getsticprops");
   return {
     props: {
       pokemon: await resp.json(),
